@@ -1,0 +1,70 @@
+[
+    {
+        "name": "woman",
+        "markerImageUrl": "ar/assets/c/marker.png",
+        "markerPatternUrl": "ar/assets/c/pattern.patt",
+        "itemArr": [
+            {
+                "link": "woman",
+                "name": "woman.wait",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman/3D_Woman2_Idle.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 0
+            },
+            {
+                "link": "woman",
+                "name": "woman.win",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman/3D_Woman2_Attack_Win.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 10000
+            },
+            {
+                "link": "woman",
+                "name": "woman.lose",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman/3D_Woman2_Attack_Lose.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 5000
+            }
+        ]
+    },
+    {
+        "name": "man",
+        "markerImageUrl": "ar/assets/b/marker.png",
+        "markerPatternUrl": "ar/assets/b/pattern.patt",
+        "itemArr": [
+            {
+                "link": "man",
+                "name": "man.wait",
+                "type": "fbx",
+                "itemUrl":"ar/files/man/3D_Man2_Idle.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 0
+            },
+            {
+                "link": "man",
+                "name": "man.win",
+                "type": "fbx",
+                "itemUrl":"ar/files/man/3D_Man2_Attack_Win.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 10000
+            },
+            {
+                "link": "man",
+                "name": "man.lose",
+                "type": "fbx",
+                "itemUrl":"ar/files/man/3D_Man2_Attack_Lose.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 5000
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "woman",
+        "attack": 2
+    },
+    {
+        "name": "man",
+        "attack": 1
+    }
+]
