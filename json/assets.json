@@ -20,7 +20,7 @@
                 "itemUrl":"ar/files/woman/3D_Woman2_Attack_Win.FBX",
                 "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
                 "position": {"x": 0, "y": 0, "z": 0},
-                "animationTime": 10000
+                "animationTime": 8300
             },
             {
                 "link": "woman",
@@ -54,7 +54,7 @@
                 "itemUrl":"ar/files/man/3D_Man2_Attack_Win.FBX",
                 "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
                 "position": {"x": 0, "y": 0, "z": 0},
-                "animationTime": 10000
+                "animationTime": 8300
             },
             {
                 "link": "man",
@@ -88,7 +88,7 @@
                 "itemUrl":"ar/files/woman/3D_Woman2_Attack_Win.FBX",
                 "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
                 "position": {"x": 0, "y": 0, "z": 0},
-                "animationTime": 10000
+                "animationTime": 8300
             },
             {
                 "link": "woman2",
@@ -122,7 +122,7 @@
                 "itemUrl":"ar/files/man/3D_Man2_Attack_Win.FBX",
                 "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
                 "position": {"x": 0, "y": 0, "z": 0},
-                "animationTime": 10000
+                "animationTime": 8300
             },
             {
                 "link": "man2",
