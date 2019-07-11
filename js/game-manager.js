@@ -10,7 +10,7 @@ class GameManager {
         this.showAssets = {};
     }
 
-    witeCard(cardArr) {
+    setCardInfoArr(cardArr) {
         const me = this;
 
         for (let i = 0; i < cardArr.length; i++) {
@@ -36,7 +36,7 @@ class GameManager {
         // 기본 형태가 보이도록 설정.
         me.__changeState(me.nemoAr.getItemArray(), GameManager.STATE_WITE);
 
-        // 같은 모양의 카드가 동시에 잡히는 경우를 생각해서 보여지고 있는 에셋을 이름별로 구분한다.
+        // 같은 이름을 가진 에셋을 묶어서 처리한다.
         const showAssetArr = Object.values(me.showAssets);
         const assetGroups = {};
 
@@ -50,7 +50,7 @@ class GameManager {
             assetGroups[showAssetArr[i].name].push(showAssetArr[i]);
         }
 
-        // 두 종류의 카드가 화면에 표시되어 있는 경우 승패를 처리한다.
+        // 두 종류의 카드가(각각의 개수는 무시) 화면에 표시되면 승패를 계산한다.
         const nameArr = Object.keys(assetGroups);
 
         if (nameArr.length == 2) {
@@ -60,7 +60,7 @@ class GameManager {
             const groupArr1 = assetGroups[card1.name];
             const groupArr2 = assetGroups[card2.name];
 
-            // 상태변환을 쉽게 하기 위해 같은 이름을 가진 에셋의 아이템을 하나의 배열로 만든다.
+            // 이름별로 나뉜 그룹의 아이템들을 하나의 배열로 묶는다.
             let itemArr1 = [];
             let itemArr2 = [];
 
@@ -88,7 +88,7 @@ class GameManager {
         for (let i = 0; i < assetItemArr.length; i++) {
             const item = assetItemArr[i];
 
-            if (item.name.indexOf(state) > -1) {
+            if (item.name.indexOf('.' + state) > -1) {
                 item.show();
 
             } else {

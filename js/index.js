@@ -9,7 +9,7 @@ const nemoAr = new NemoAr({
         const assets = new Assets();
 
         cards.info().then(function (cardArr) {
-            gameManager.witeCard(cardArr);
+            gameManager.setCardInfoArr(cardArr);
         });
 
         assets.info().then(function (assetArr) {
@@ -26,11 +26,13 @@ const nemoAr = new NemoAr({
 
     },
     onShowAsset: function (asset) {
+        // 캐릭터가 보여지면 매니저에 등록한다.
         gameManager.addAsset(asset);
         gameManager.decideWinLose();
 
     },
     onHideAsset: function (asset) {
+        // 캐릭터가 숨겨지면 매니저에서 제거한다.
         gameManager.removeAsset(asset);
         gameManager.decideWinLose();
 

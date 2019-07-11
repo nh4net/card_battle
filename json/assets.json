@@ -1,8 +1,8 @@
 [
     {
         "name": "woman",
-        "markerImageUrl": "ar/assets/c/marker.png",
-        "markerPatternUrl": "ar/assets/c/pattern.patt",
+        "markerImageUrl": "ar/assets/a/marker.png",
+        "markerPatternUrl": "ar/assets/a/pattern.patt",
         "itemArr": [
             {
                 "link": "woman",
@@ -59,6 +59,74 @@
             {
                 "link": "man",
                 "name": "man.lose",
+                "type": "fbx",
+                "itemUrl":"ar/files/man/3D_Man2_Attack_Lose.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 5000
+            }
+        ]
+    },
+    {
+        "name": "woman2",
+        "markerImageUrl": "ar/assets/c/marker.png",
+        "markerPatternUrl": "ar/assets/c/pattern.patt",
+        "itemArr": [
+            {
+                "link": "woman2",
+                "name": "woman2.wait",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman/3D_Woman2_Idle.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 0
+            },
+            {
+                "link": "woman2",
+                "name": "woman2.win",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman/3D_Woman2_Attack_Win.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 10000
+            },
+            {
+                "link": "woman2",
+                "name": "woman2.lose",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman/3D_Woman2_Attack_Lose.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 5000
+            }
+        ]
+    },
+    {
+        "name": "man2",
+        "markerImageUrl": "ar/assets/d/marker.png",
+        "markerPatternUrl": "ar/assets/d/pattern.patt",
+        "itemArr": [
+            {
+                "link": "man2",
+                "name": "man2.wait",
+                "type": "fbx",
+                "itemUrl":"ar/files/man/3D_Man2_Idle.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 0
+            },
+            {
+                "link": "man2",
+                "name": "man2.win",
+                "type": "fbx",
+                "itemUrl":"ar/files/man/3D_Man2_Attack_Win.FBX",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationTime": 10000
+            },
+            {
+                "link": "man2",
+                "name": "man2.lose",
                 "type": "fbx",
                 "itemUrl":"ar/files/man/3D_Man2_Attack_Lose.FBX",
                 "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
