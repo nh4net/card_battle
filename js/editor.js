@@ -14,7 +14,9 @@ const control = {
     rotationX: 0.01,
     rotationY: 0.01,
     rotationZ: 0.01,
-    animationTime: 0,
+    animationStartTime: 0,
+    animationEndTime: 0,
+    animationLoop: true,
     itemHide: false,
     importFbx: () => {
         const path = prompt('경로입력', 'ar/files/');
@@ -52,11 +54,11 @@ const nemoArEditor = new NemoArEditor({
     onMove: (arr) => {}
 });
 
-assets.info().then((assetArr) => {
+assets.getData().then((assetArr) => {
     guiAsset.open();
     guiItem.open();
 
-    guiAsset.add(control, 'open', {'woman': 0, 'B': 1, 'C': 2}).onChange((index) => {
+    guiAsset.add(control, 'open', {'test': 0}).onChange((index) => {
         nemoArEditor.open(assetArr[index]);
     });
     guiAsset.add(control, 'name').onFinishChange(onItemInfoChange);
@@ -73,7 +75,9 @@ assets.info().then((assetArr) => {
     guiItem.add(control, 'rotationX', -180, 180).onFinishChange(onItemInfoChange);
     guiItem.add(control, 'rotationY', -180, 180).onFinishChange(onItemInfoChange);
     guiItem.add(control, 'rotationZ', -180, 180).onFinishChange(onItemInfoChange);
-    guiItem.add(control, 'animationTime').onFinishChange(onItemInfoChange);
+    guiItem.add(control, 'animationStartTime').onFinishChange(onItemInfoChange);
+    guiItem.add(control, 'animationEndTime').onFinishChange(onItemInfoChange);
+    guiItem.add(control, 'animationLoop').onFinishChange(onItemInfoChange);
     guiItem.add(control, 'itemHide').onFinishChange(onItemHideChange);
 });
 
@@ -87,7 +91,9 @@ function onSelect(itemInfo) {
     control.rotationX = itemInfo.rotation.x * (180 / Math.PI);
     control.rotationY = itemInfo.rotation.y * (180 / Math.PI);
     control.rotationZ = itemInfo.rotation.z * (180 / Math.PI);
-    control.animationTime = itemInfo.animationTime;
+    control.animationStartTime = itemInfo.animationStartTime;
+    control.animationEndTime = itemInfo.animationEndTime;
+    control.animationLoop = itemInfo.animationLoop;
     control.itemHide = !itemInfo.isVisible;
 
     for (let key in gui.__folders) {
@@ -123,7 +129,7 @@ function onItemInfoChange() {
         nemoArEditor.setScale(control.scale, control.scale, control.scale);
         nemoArEditor.setPosition(control.positionX, control.positionY, control.positionZ);
         nemoArEditor.setRotation(control.rotationX * (Math.PI / 180), control.rotationY * (Math.PI / 180), control.rotationZ * (Math.PI / 180));
-        nemoArEditor.setAnimationTime(control.animationTime);
+        nemoArEditor.setAnimationTime(control.animationStartTime, control.animationEndTime, control.animationLoop);
     }
 }
 

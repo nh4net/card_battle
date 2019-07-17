@@ -1,0 +1,62 @@
+[
+    {
+        "markerImageUrl": "ar/assets/a/marker.png",
+        "markerPatternUrl": "ar/assets/a/pattern.patt",
+        "itemArr": [
+            {
+                "name": "man1",
+                "type": "fbx",
+                "itemUrl":"ar/files/man-full/man.fbx",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationStartTime": 2500,
+                "animationEndTime": 4300
+            }
+        ]
+    },
+    {
+        "markerImageUrl": "ar/assets/b/marker.png",
+        "markerPatternUrl": "ar/assets/b/pattern.patt",
+        "itemArr": [
+            {
+                "name": "woman1",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman-full/woman.fbx",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationStartTime": 2500,
+                "animationEndTime": 4300
+            }
+        ]
+    },
+    {
+        "markerImageUrl": "ar/assets/c/marker.png",
+        "markerPatternUrl": "ar/assets/c/pattern.patt",
+        "itemArr": [
+            {
+                "name": "man2",
+                "type": "fbx",
+                "itemUrl":"ar/files/man-full/man.fbx",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationStartTime": 2500,
+                "animationEndTime": 4300
+            }
+        ]
+    },
+    {
+        "markerImageUrl": "ar/assets/d/marker.png",
+        "markerPatternUrl": "ar/assets/d/pattern.patt",
+        "itemArr": [
+            {
+                "name": "woman2",
+                "type": "fbx",
+                "itemUrl":"ar/files/woman-full/woman.fbx",
+                "scale": {"x": 0.03, "y": 0.03, "z": 0.03},
+                "position": {"x": 0, "y": 0, "z": 0},
+                "animationStartTime": 2500,
+                "animationEndTime": 4300
+            }
+        ]
+    }
+]

@@ -1,8 +1,8 @@
 class Assets {
-    info() {
+    getData() {
         return new Promise(function (resolve, reject) {
             $.ajax({
-                url: 'json/assets.json',
+                url: 'json/assets2.json',
                 method: 'get',
                 dataType: 'json'
             }).done(

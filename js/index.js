@@ -1,3 +1,5 @@
+const gameManager = new GameManager();
+
 const nemoAr = new NemoAr({
     baseUrl: './',
     arToolkitBaseUrl: './lib/nemoar/data',
@@ -5,14 +7,9 @@ const nemoAr = new NemoAr({
     width: window.innerWidth,
     height: window.innerHeight,
     onInit: function () {
-        const cards = new Cards();
         const assets = new Assets();
 
-        cards.info().then(function (cardArr) {
-            gameManager.setCardInfoArr(cardArr);
-        });
-
-        assets.info().then(function (assetArr) {
+        assets.getData().then(function (assetArr) {
             const promiseArr = [];
 
             for (let i = 0; i < assetArr.length; i++) {
@@ -20,21 +17,21 @@ const nemoAr = new NemoAr({
             }
 
             Promise.all(promiseArr).then(function () {
-                gameManager.decideWinLose();
+                gameManager.decideWinLose(nemoAr);
             });
         });
 
     },
     onShowAsset: function (asset) {
         // 캐릭터가 보여지면 매니저에 등록한다.
-        gameManager.addAsset(asset);
-        gameManager.decideWinLose();
+        gameManager.setShowAsset(asset);
+        gameManager.decideWinLose(nemoAr);
 
     },
     onHideAsset: function (asset) {
         // 캐릭터가 숨겨지면 매니저에서 제거한다.
-        gameManager.removeAsset(asset);
-        gameManager.decideWinLose();
+        gameManager.setHideAsset(asset);
+        gameManager.decideWinLose(nemoAr);
 
     },
     onError: function () {
@@ -50,25 +47,11 @@ const nemoAr = new NemoAr({
     }
 });
 
-const gameManager = new GameManager(nemoAr);
-
-let resizeTimeout;
-
 function resize() {
-    clearTimeout(resizeTimeout);
+    const $window = $(window);
 
-    nemoAr.hideSource();
-    nemoAr.stop();
-
-    resizeTimeout = setTimeout(function () {
-        const $window = $(window);
-
-        // iOS 사파리 가로 모드로 전환시 주소 표시줄을 숨기기 위해 기본 크기보다 1 크게 한다.
-        nemoAr.resize($window.width(), $window.height() + 1);
-
-        nemoAr.showSource();
-        nemoAr.start();
-    }, 300);
+    // iOS 사파리 가로 모드로 전환시 주소 표시줄을 숨기기 위해 기본 크기보다 1 크게 한다.
+    nemoAr.resize($window.width(), $window.height() + 1);
 }
 
 $(window).on('resize', function () {
