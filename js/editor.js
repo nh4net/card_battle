@@ -58,7 +58,7 @@ assets.getData().then((assetArr) => {
     guiAsset.open();
     guiItem.open();
 
-    guiAsset.add(control, 'open', {'test': 0}).onChange((index) => {
+    guiAsset.add(control, 'open', {'test0': 0, 'test1': 1}).onChange((index) => {
         nemoArEditor.open(assetArr[index]);
     });
     guiAsset.add(control, 'name').onFinishChange(onItemInfoChange);
