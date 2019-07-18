@@ -1,7 +1,15 @@
 class GameManager {
-    static STATE_WITE = 'wait';
-    static STATE_WIN = 'win';
-    static STATE_LOSE = 'lose';
+    static get STATE_WITE() {
+        return 'wait';
+    };
+
+    static get STATE_WIN() {
+        return 'win';
+    }
+
+    static get STATE_LOSE() {
+        return 'lose';
+    }
 
     constructor () {
         this.cardInfos = {};
