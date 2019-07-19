@@ -17,6 +17,8 @@ const nemoAr = new NemoAr({
             }
 
             Promise.all(promiseArr).then(function () {
+                $('#loading').hide();
+
                 gameManager.decideWinLose(nemoAr);
             });
         });
