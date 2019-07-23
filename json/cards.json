@@ -1,18 +1,94 @@
 [
     {
-        "name": "woman",
-        "attack": 1
+        "name": "man1",
+        "attack": 1,
+        "actionInfo": {
+            "wait": {
+                "timeArr": [
+                    {"start": 2500, "end": 4300}
+                ]
+            },
+            "win": {
+                "timeArr": [
+                    {"start": 4300, "end": 7000},
+                    {"start": 7000, "end": 12000, "loop": false}
+                ]
+            },
+            "lose": {
+                "timeArr": [
+                    {"start": 4300, "end": 7000},
+                    {"start": 13000, "end": 16500, "loop": false}
+                ]
+            } 
+        }
     },
     {
-        "name": "man",
-        "attack": 2
-    },
-    {
-        "name": "woman2",
-        "attack": 3
+        "name": "woman1",
+        "attack": 2,
+        "actionInfo": {
+            "wait": {
+                "timeArr": [
+                    {"start": 1300, "end": 4000}
+                ]
+            },
+            "win": {
+                "timeArr": [
+                    {"start": 4000, "end": 6300},
+                    {"start": 6300, "end": 10000, "loop": false}
+                ]
+            },
+            "lose": {
+                "timeArr": [
+                    {"start": 4000, "end": 6300},
+                    {"start": 10000, "end": 13000, "loop": false}
+                ]
+            }
+        }
     },
     {
         "name": "man2",
-        "attack": 4
+        "attack":3,
+        "actionInfo": {
+            "wait": {
+                "timeArr": [
+                    {"start": 2500, "end": 4300}
+                ]
+            },
+            "win": {
+                "timeArr": [
+                    {"start": 4300, "end": 7000},
+                    {"start": 7000, "end": 12000, "loop": false}
+                ]
+            },
+            "lose": {
+                "timeArr": [
+                    {"start": 4300, "end": 7000},
+                    {"start": 13000, "end": 16500, "loop": false}
+                ]
+            } 
+        }
+    },
+    {
+        "name": "woman2",
+        "attack": 4,
+        "actionInfo": {
+            "wait": {
+                "timeArr": [
+                    {"start": 1300, "end": 4000}
+                ]
+            },
+            "win": {
+                "timeArr": [
+                    {"start": 4000, "end": 6300},
+                    {"start": 6300, "end": 10000, "loop": false}
+                ]
+            },
+            "lose": {
+                "timeArr": [
+                    {"start": 4000, "end": 6300},
+                    {"start": 10000, "end": 13000, "loop": false}
+                ]
+            }
+        }
     }
 ]

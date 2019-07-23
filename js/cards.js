@@ -74,7 +74,7 @@ class Cards {
     getData() {
         return new Promise(function (resolve, reject) {
             $.ajax({
-                url: 'json/cards2.json',
+                url: 'json/cards.json',
                 method: 'get',
                 dataType: 'json'
 
