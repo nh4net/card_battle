@@ -5,21 +5,21 @@
         "actionInfo": {
             "wait": {
                 "timeArr": [
-                    {"start": 2500, "end": 4300}
+                    {"start": 2013, "end": 4158}
                 ]
             },
             "win": {
                 "timeArr": [
-                    {"start": 4300, "end": 7000},
-                    {"start": 7000, "end": 12000, "loop": false}
+                    {"start": 4323, "end": 6798},
+                    {"start": 7128, "end": 12573, "loop": false}
                 ]
             },
             "lose": {
                 "timeArr": [
-                    {"start": 4300, "end": 7000},
-                    {"start": 13000, "end": 16500, "loop": false}
+                    {"start": 4323, "end": 6798},
+                    {"start": 12903, "end": 16500, "loop": false}
                 ]
-            } 
+            }
         }
     },
     {
@@ -28,19 +28,19 @@
         "actionInfo": {
             "wait": {
                 "timeArr": [
-                    {"start": 1300, "end": 4000}
+                    {"start": 1584, "end": 3960}
                 ]
             },
             "win": {
                 "timeArr": [
-                    {"start": 4000, "end": 6300},
-                    {"start": 6300, "end": 10000, "loop": false}
+                    {"start": 4125, "end": 6105},
+                    {"start": 6435, "end": 9900, "loop": false}
                 ]
             },
             "lose": {
                 "timeArr": [
-                    {"start": 4000, "end": 6300},
-                    {"start": 10000, "end": 13000, "loop": false}
+                    {"start": 4125, "end": 6105},
+                    {"start": 10065, "end": 13200, "loop": false}
                 ]
             }
         }
@@ -51,21 +51,21 @@
         "actionInfo": {
             "wait": {
                 "timeArr": [
-                    {"start": 2500, "end": 4300}
+                    {"start": 2013, "end": 4158}
                 ]
             },
             "win": {
                 "timeArr": [
-                    {"start": 4300, "end": 7000},
-                    {"start": 7000, "end": 12000, "loop": false}
+                    {"start": 4323, "end": 6798},
+                    {"start": 7128, "end": 12573, "loop": false}
                 ]
             },
             "lose": {
                 "timeArr": [
-                    {"start": 4300, "end": 7000},
-                    {"start": 13000, "end": 16500, "loop": false}
+                    {"start": 4323, "end": 6798},
+                    {"start": 12903, "end": 16500, "loop": false}
                 ]
-            } 
+            }
         }
     },
     {
@@ -74,19 +74,19 @@
         "actionInfo": {
             "wait": {
                 "timeArr": [
-                    {"start": 1300, "end": 4000}
+                    {"start": 1584, "end": 3960}
                 ]
             },
             "win": {
                 "timeArr": [
-                    {"start": 4000, "end": 6300},
-                    {"start": 6300, "end": 10000, "loop": false}
+                    {"start": 4125, "end": 6105},
+                    {"start": 6435, "end": 9900, "loop": false}
                 ]
             },
             "lose": {
                 "timeArr": [
-                    {"start": 4000, "end": 6300},
-                    {"start": 10000, "end": 13000, "loop": false}
+                    {"start": 4125, "end": 6105},
+                    {"start": 10065, "end": 13200, "loop": false}
                 ]
             }
         }
