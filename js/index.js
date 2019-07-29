@@ -1,5 +1,9 @@
 const gameManager = new GameManager();
 
+const stats = new Stats();
+stats.showPanel(0);
+document.body.appendChild( stats.dom );
+
 const nemoAr = new NemoAr({
     baseUrl: './',
     arToolkitBaseUrl: './lib/nemoar/data',
@@ -46,6 +50,12 @@ const nemoAr = new NemoAr({
     },
     onClick: function (assetItem) {
         console.log('onClick : ' + assetItem.name);
+    },
+    onFrameStart: function () {
+        stats.begin();
+    },
+    onFrameEnd: function () {
+        stats.end();
     }
 });
 
